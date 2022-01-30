@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="img/krzyż.png">
+<title>Moje Bezpieczeństwo</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div class="wrapper">
+	
+	<div class="header">
+	
+		<div class="logo"><img src="img/krzyż.png" height="100px">Moje Bezpieczeństwo</div>
+		
+	</div>
+
+	<div class="nav">
+	
+	<ol>
+		<li><a href="index.html">Strona Główna</a></li>
+		
+		<li><a href="#">Pierwsza Pomoc</a>
+		
+			<ul>
+			<li><a href="oparzenia.html">Oparzenia i Odmrożenia</a></li>
+			<li><a href="złamania.html">Złamania i Zwichnięcia</a></li>
+			<li><a href="resucytacja.html">Resuscytacja krążeniowo-<br>-oddechowa</a></li>
+			<li><a href="tamowanie.html">Tamowanie Krwawień</a></li>
+			<li><a href="apteczka.html">Apteczka</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="służby.html">Służby</a></li>
+		
+		<li><a href="#">System Alarmowy</a>
+		
+			<ul>
+			<li><a href="dźwiękowy.html">Dźwiękowy</a></li>
+			<li><a href="słowny.html">Słowny</a></li>
+			<li><a href="wizualny.html">Wizualny</a></li>
+			<li><a href="urządzenia.html">Urządzenia Alarmowe</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="#">Zagrożenia</a>
+		
+			<ul>
+			<li><a href="powodzie.html">Powodzie</a></li>
+			<li><a href="pożary.html">Pożary</a></li>
+			<li><a href="atak.html">Zagrożenie Terorystyczne</a></li>
+			<li><a href="zagrożenia.html">Źródła Zagrożeń</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="numery.html">Numery Alarmowe</a></li>
+		
+		<li><a href="#">Inne</a>
+		
+			<ul>
+			<li><a href="katastrofy.html">Katastrofy</a></li>
+			<li><a href="filmy.html">Filmy</a></li>
+			</ul>
+			
+		</li>
+		
+	</ol>
+	
+	
+	
+	</div>
+	
+	<div class="content">
+	<h1 align="center">Numery Alarmowe</h1>
+	</div>
+	<div class="numery">
+	112 - Europejski Numer Alarmowy<br><br>
+	997 - Policja<br><br>
+	998 - Straż Pożarna<br><br>
+	999 - Pogotowie Ratunkowe<br><br>
+	------------------------------------------------------<br>
+	984 - Pogotowie Rzeczne<br><br>
+	985 - Ratownictwo Morskie i Górskie<br><br>
+	986 - Straż Miejska<br><br>
+	987 - Woj. Zarządanie Kryzysowe<br><br>
+	989 - Narodowy Fundusz Zdrowia<br><br>
+	991 - Pogotowie Energetyczne<br><br>
+	992 - Pogotowie Gazowe<br><br>
+	993 - Pogotowie Cieplne<br><br>
+	994 - Pogotowie Wodociągowe<br><br><br>
+	
+	</div>
+	
+	<div class="foother">
+	&copy;2021-2022 Moje Bezpieczeństwo. Twórca Maciej Kornaga. Wszelkie prawa zastrzeżone!<br>
+	W razie jakich kolwiek błędów kontaktować się z twórcą.
+	</div>
+	
+</div>
+
+<script src="jquery.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+
+
+</html>

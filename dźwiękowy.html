@@ -1,0 +1,157 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="img/krzyż.png">
+<title>Moje Bezpieczeństwo</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div class="wrapper">
+	
+	<div class="header">
+	
+		<div class="logo"><img src="img/krzyż.png" height="100px">Moje Bezpieczeństwo</div>
+		
+	</div>
+
+	<div class="nav">
+	
+	<ol>
+		<li><a href="index.html">Strona Główna</a></li>
+		
+		<li><a href="#">Pierwsza Pomoc</a>
+		
+			<ul>
+			<li><a href="oparzenia.html">Oparzenia i Odmrożenia</a></li>
+			<li><a href="złamania.html">Złamania i Zwichnięcia</a></li>
+			<li><a href="resucytacja.html">Resuscytacja krążeniowo-<br>-oddechowa</a></li>
+			<li><a href="tamowanie.html">Tamowanie Krwawień</a></li>
+			<li><a href="apteczka.html">Apteczka</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="służby.html">Służby</a></li>
+		
+		<li><a href="#">System Alarmowy</a>
+		
+			<ul>
+			<li><a href="dźwiękowy.html">Dźwiękowy</a></li>
+			<li><a href="słowny.html">Słowny</a></li>
+			<li><a href="wizualny.html">Wizualny</a></li>
+			<li><a href="urządzenia.html">Urządzenia Alarmowe</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="#">Zagrożenia</a>
+		
+			<ul>
+			<li><a href="powodzie.html">Powodzie</a></li>
+			<li><a href="pożary.html">Pożary</a></li>
+			<li><a href="atak.html">Zagrożenie Terorystyczne</a></li>
+			<li><a href="zagrożenia.html">Źródła Zagrożeń</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="numery.html">Numery Alarmowe</a></li>
+		
+		<li><a href="#">Inne</a>
+		
+			<ul>
+			<li><a href="katastrofy.html">Katastrofy</a></li>
+			<li><a href="filmy.html">Filmy</a></li>
+			</ul>
+			
+		</li>
+		
+	</ol>
+	
+	
+	
+	</div>
+
+	<div class="audio">
+	
+	<h1 align="center">Alarm dźwiękowy</h1>
+	
+	<table align="center">
+	<br><br>
+	<tr>
+	<th>Ogłoszenie Alarmu:<br><br></th> <th></th><th></th><th></th><th></th><th></th><th></th><th></th> <th>Odwołanie Alarmu:<br><br></th>
+	</tr>
+	
+	<tr>
+	<th>Modulowany dźwięk syreny <br>w okresie trzech minut.<br><br></th> <th></th><th></th><th></th><th></th><th></th><th></th><th></th> <th>Ciągły dźwięk syreny <br>w okresie trzech minut.<br><br></th>
+	</tr>
+	
+	<tr>
+	<th><img src="img/modulowany.png"><br><br></th> <th></th><th></th><th></th><th></th><th></th><th></th><th></th> <th><img src="img/ciągły.png"><br><br></th>
+	</tr>
+	
+	<tr>	
+	<td><audio controls>
+	
+	<source src="img/modul.mp3" type='audio/mpeg'>
+	<a href="modul.mp3">Error</a>
+	
+	</audio></td>
+	
+	<th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+	
+	<td><audio controls>
+	
+	<source src="img/ciągły.mp3" type='audio/mpeg'>
+	<a href="modul.mp3">Error</a>
+	
+	</audio></td>
+	
+	</tr>
+	
+	</table>
+	
+	<br><br><br><br><br><br>
+	
+	</div>
+	
+	<div class="foother">
+	&copy;2021-2022 Moje Bezpieczeństwo. Twórca Maciej Kornaga. Wszelkie prawa zastrzeżone!<br>
+	W razie jakich kolwiek błędów kontaktować się z twórcą.
+	</div>
+	
+</div>
+
+<script src="jquery.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+
+
+</html>

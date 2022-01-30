@@ -1,0 +1,245 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="img/krzyż.png">
+<title>Moje Bezpieczeństwo</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="jquery.scrollTo.min.js"></script>
+
+<script>
+
+	jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#odm'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+	
+	<div class="header">
+	
+		<div class="logo"><img src="img/krzyż.png" height="100px">Moje Bezpieczeństwo</div>
+		
+		<a href="#" class="scrollup"></a>
+		
+	</div>
+
+	<div class="nav">
+	
+	<ol>
+		<li><a href="index.html">Strona Główna</a></li>
+		
+		<li><a href="#">Pierwsza Pomoc</a>
+		
+			<ul>
+			<li><a href="oparzenia.html">Oparzenia i Odmrożenia</a></li>
+			<li><a href="złamania.html">Złamania i Zwichnięcia</a></li>
+			<li><a href="resucytacja.html">Resuscytacja krążeniowo-<br>-oddechowa</a></li>
+			<li><a href="tamowanie.html">Tamowanie Krwawień</a></li>
+			<li><a href="apteczka.html">Apteczka</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="służby.html">Służby</a></li>
+		
+		<li><a href="#">System Alarmowy</a>
+		
+			<ul>
+			<li><a href="dźwiękowy.html">Dźwiękowy</a></li>
+			<li><a href="słowny.html">Słowny</a></li>
+			<li><a href="wizualny.html">Wizualny</a></li>
+			<li><a href="urządzenia.html">Urządzenia Alarmowe</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="#">Zagrożenia</a>
+		
+			<ul>
+			<li><a href="powodzie.html">Powodzie</a></li>
+			<li><a href="pożary.html">Pożary</a></li>
+			<li><a href="atak.html">Zagrożenie Terorystyczne</a></li>
+			<li><a href="zagrożenia.html">Źródła Zagrożeń</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="numery.html">Numery Alarmowe</a></li>
+		
+		<li><a href="#">Inne</a>
+		
+			<ul>
+			<li><a href="katastrofy.html">Katastrofy</a></li>
+			<li><a href="filmy.html">Filmy</a></li>
+			</ul>
+			
+		</li>
+		
+	</ol>
+	
+	</div>
+	
+	<div class="topbar">
+	
+	<li><a id="link1" href="#">Przewiń do: Odmrożenia i wychłodzenia:</a></li><br>
+	
+	<div style="clear:both;"></div>
+	
+	</div>
+	
+
+	<div class="content">
+	
+	<h1>Oparzenia</h1>
+	
+	<p><b>Oparzenia termiczne:</b><br><br>
+	
+	Objawy względem stopnia oparzenia:<br><br>
+	I. Piekący ból, zaczerwienienie skóry i obrzęk.<br>
+	II. Pęcherze wypełnione płynem surowiczym, silny ból.<br>
+	III. Martwica tkanek, wypalone, zagłębione rany o zwęglonych brzegach.<br>
+	IV. Zwłęglone cięści ciała.<br><br>
+	
+	Pierwsza Pomoc:<br>
+	
+	<li>Ostrożnie odsłoń oparzone miejsce. Zdejmij odzież lub rozetnij 
+	jej fragment, nie usuwaj jednak fragmentów przyklejonych do skóry.</li><br>
+	
+	<li>Intesywnnie schładzaj oparzone miejsce chłodną wodą (nie za zimną i niezbyt wartkim strumieniem) 
+	przez minimum 10 minut. Mniejsze powierzchnie schładzaj 20-30 minut, 
+	a rozległe krócej by nie narazić poszkodowanego na utratę ciepła.</li><br>
+	
+	<li>Na schłodzoną powierzchnię nałóż opatrunek przeciwoparzeniowy lub jałowy opatrunek osłaniający.</li><br>
+	
+	<li>Nie wolno: przekuwać pęcherzy, smarować ich maścią, tłuszczem.</li><br>
+	
+	<li>W przypadku rozległych oparzeń okryj poszkodowanego folią NRC by nie utracił ciepła 
+	i wezwij Pogotowie Ratunkowe lub samemu zawieź osobę do szpitala.</li></p><br><br>
+	
+	<p><b>Oparzenia środkami chemicznymi:</b><br><br>
+	
+	Pierwsza Pomoc<br>
+	
+	<li>Szybko odsłoń poparzone ciało i obficie spłucz środek chemiczny dużą ilością wody i załóż jałowy opatrunek.</li><br>
+	
+	<li>Oparzenia przełyku i przewodu pokarmowego: jeśli poszkodowany jest 
+	przytomny podaj mu do wypicia dużą ilość wody i weźwij Pogotowie Ratunkowe. Nie wywołuj wymiotów.</li><br>
+	
+	<li>Oparzenia oczu: płucz oczy umiarkowanym strumieniem letniej (około 20<sup>o</sup>C) wody przez 10-20 minut. 
+	Natychmiast skontaktuj się z lekarzem.</li></p><br><br>
+	
+	<p><b>Udar słoneczny i cieplny:</b><br><br>
+	
+	Objawy udaru cieplnego lub słonecznego:<br>
+	
+	<li>Uczucie osłabienia i apatia.</li><br>
+	
+	<li>Bóle i zawroty głowy.</li><br>
+	
+	<li>Utrata przytomności.</li><br>
+	
+	<li>Drgawki.</li><br>
+	
+	<li>Silne pragnienie.</li><br>
+	
+	<li>Wzrost temperatury ciała, zaburzenia rytmu serca i oddychania, spadek ciśnienia krwi - przy udarze cieplnym.</li><br>
+	
+	<li>Zaczerwienienie, ból i rozgrzanie skóry, nudności i wymioty - w przypadku udaru słonecznego.</li><br>
+	
+	<li>Zaczerwienienie, ból skóry, pęcherze - w przypadku udaru cieplnego.</li><br><br>
+	
+	<b>Pierwsza Pomoc:</b><br><br>
+	
+	<li>Przeprowadź poszkodowanego w zacienione i zimne miejsce i ułóż w pozycji półsiedzącej.</li><br>
+	
+	<li id="odm">Jeśli poszkodowany stracił przytomność ułóż go w pozycji bezpiecznej w zacienionym i 
+	zimnym miejscu. Wezwij Pogotowie Ratunkowe i kontroluj jego funkcje życiowe</li><br>
+	
+	<li>W przypadku opażeń słonecznych ochładzaj skórę np. chłodnym prysznicem i podawaj dużą ilość wody.</li></p><br><br><br><br><br>
+	
+	<h1>Odmrożenia i wychłodzenia</h1>
+	
+	<p><b>Wychłodzenie</b> - gdy organizm ma poniżej 35<sup>o</sup>C przez np. niedostosowanie odzieży do pogody i pory roku.<br><br>
+	<b>Odmrożenia</b> - to uszkodzenie skóry na skutek działania zimna.<br><br><br>
+	
+	<b>Pierwsza Pomoc - wychłodzenia:</b><br>
+	
+	<li>Chroń poszkodowanego przed dalszym wychłodzeniem: przenieś go do ciepłego pomieszczenia, okryj kocem.</li><br>
+	
+	<li>Zdejmij z poszkodowanego odzież i jeśli jest to możliwe zamień na suchą.</li><br>
+	
+	<li>Jeśli osoba jest przytomna podaj jej ciepły (nie gorący!) bardzo słodki napój.</li><br>
+	
+	<li>Kontroluj jej stan, w razie konieczności rozpocznij resuscytację krążeniowo-oddechową.</li><br><br>
+	
+	<b>Pierwsza Pomoc - odmrożenia:</b><br><br>
+	
+	<li>Przenieś poszkodowanego do ciepłego pomieszczenia.</li><br>
+	
+	<li>Ogrzewaj powierzchnie odmrożone najlepiej po przez ciepłą kąpiel.</li><br>
+	
+	<li>Nałóż na odmrożone powierzchnie skóry jałowy opatrunek.</li><br>
+	
+	<li>Nie masuj odmrożonej części ciała, nie rozcieraj jej śniegiem, nie ogrzewaj jej suszarką, nie polewaj gorącą wodą.</li></p>
+	
+	</div>
+	
+	<div class="foother">
+	&copy;2021-2022 Moje Bezpieczeństwo. Twórca Maciej Kornaga. Wszelkie prawa zastrzeżone!<br>
+	W razie jakich kolwiek błędów kontaktować się z twórcą.
+	</div>
+	
+</div>
+
+<script src="jquery.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+
+
+</html>

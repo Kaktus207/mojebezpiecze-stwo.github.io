@@ -1,0 +1,243 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="img/krzyż.png">
+<title>Moje Bezpieczeństwo</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="jquery.scrollTo.min.js"></script>
+
+<script>
+
+	jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#link2').click(function() { $.scrollTo($('#zw'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#kr'), 500); });
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+	
+	<div class="header">
+	
+		<div class="logo"><img src="img/krzyż.png" height="100px">Moje Bezpieczeństwo</div>
+		
+		<a href="#" class="scrollup"></a>
+		
+	</div>
+
+	<div class="nav">
+	
+	<ol>
+		<li><a href="index.html">Strona Główna</a></li>
+		
+		<li><a href="#">Pierwsza Pomoc</a>
+		
+			<ul>
+			<li><a href="oparzenia.html">Oparzenia i Odmrożenia</a></li>
+			<li><a href="złamania.html">Złamania i Zwichnięcia</a></li>
+			<li><a href="resucytacja.html">Resuscytacja krążeniowo-<br>-oddechowa</a></li>
+			<li><a href="tamowanie.html">Tamowanie Krwawień</a></li>
+			<li><a href="apteczka.html">Apteczka</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="służby.html">Służby</a></li>
+		
+		<li><a href="#">System Alarmowy</a>
+		
+			<ul>
+			<li><a href="dźwiękowy.html">Dźwiękowy</a></li>
+			<li><a href="słowny.html">Słowny</a></li>
+			<li><a href="wizualny.html">Wizualny</a></li>
+			<li><a href="urządzenia.html">Urządzenia Alarmowe</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="#">Zagrożenia</a>
+		
+			<ul>
+			<li><a href="powodzie.html">Powodzie</a></li>
+			<li><a href="pożary.html">Pożary</a></li>
+			<li><a href="atak.html">Zagrożenie Terorystyczne</a></li>
+			<li><a href="zagrożenia.html">Źródła Zagrożeń</a></li>
+			</ul>
+			
+		</li>
+		
+		<li><a href="numery.html">Numery Alarmowe</a></li>
+		
+		<li><a href="#">Inne</a>
+		
+			<ul>
+			<li><a href="katastrofy.html">Katastrofy</a></li>
+			<li><a href="filmy.html">Filmy</a></li>
+			</ul>
+			
+		</li>
+		
+	</ol>
+	
+	
+	
+	</div>
+	
+	<div class="topbar">
+	
+	<li><a id="link2" href="#">Przewiń do: Zwichnięcia:</a></li><br>
+	<li><a id="link3" href="#">Przewiń do: Urazy Kręgosłupa:</a></li><br>
+	
+	<div style="clear:both;"></div>
+	
+	</div>
+	
+	<div class="content">
+	
+	<h1>Złamania</h1>
+	
+	<p><b>Złamanie</b> - całkowite przerwanie ciągłości kości.<br><br>
+	<b>Złamanie otwarte</b> - złamanie, w którym odłamy kości przebijają tkanki i są widoczne na zewnątrz.</p><br><br>
+	
+	Typowe objawy złamania:<br><br>
+	
+	<li>Silny, tępy ból w miejscu urazu.</li><br>
+	
+	<li>Zmiana kształtu uszkodzonej kości.</li><br>
+	
+	<li>Drżenie kończyny ze złamaną kością.</li><br>
+	
+	<li>Nasilający się obrzęk.</li><br>
+	
+	<li>Sińce i krwiaki.</li><br>
+	
+	<li>Nieprawidłowa lub uniemożliwiona ruchomość.</li><br><br>
+	
+	Pierwsza Pomoc:<br><br>
+	
+	<li>Jeśli to możliwe, posadź lub ułóż poszkodowanego w wygodnej pozycji.</li><br>
+	
+	<li>Unieruchom złamaną kość razem z dwoma sąsiadującymi stawami. Jako szynę możesz wykorzystać sztywne 
+	i proste przedmioty np. deskę. Szynę przytwierdź bandażem.</li><br>
+	
+	<li>Jak najszybciej poinformuj o całej sytuacji kogoś dorosłego i weźwij Pogotowie Ratunkowe.</li><br>
+	
+	<li>Jeśli doszło do złamania przedramienia, nadgarstka lub kości dłoni - usztywnij je sztywnym i prostym przedmiotem.</li><br>
+	
+	<li>Następnie podwieś rękę za pomocą chusty trójkątnej, a jeśli jej nie masz możesz użyć np. bandaża, szalika, apaszki.</li><br>
+	
+	<li id="zw">Rękę możesz dodatkowo usztywnić, przywiązując ją do tułowia.</li><br>
+	
+	<img src="img/zakładanie.png" height="400px"></p><br><br>
+	
+	
+	<h1>Zwichnięcia</h1>
+	
+	<p><b>Zwichnięcie</b> - przemieszczenie względem siebie kości tworzących staw.<br><br>
+	<b>Skręcenie</b> - naruszenie tkanek miękkich otaczających staw, ale bez przemieszczenia kości.</p><br><br>
+	
+	<p>Typowe objawy zwichnięć i skręceń:<br><br>
+	
+	<li>Silny ból.</li><br>
+	
+	<li>Ograniczenie ruchowe stawu.</li><br>
+	
+	<li>Obrzęk w okolicach stawu.</li><br>
+	
+	<li>Zniekształcenie stawu.</li><br>
+	
+	<li>Krwiaki.</li><br><br>
+	
+	Pierwsza Pomoc:<br><br>
+	
+	<li>Porozmawiaj z poszkodowanym. Co się stało, co go boli.</li><br>
+	
+	<li>Pomóż mu przyjąć wygodną pozycję.</li><br>
+	
+	<li id="kr">Zrób zimny okład w miejscu urazu.</li><br>
+	
+	<li>Unieruchom dwie sąsiednie struktury kostne, postępuj jak przy złamaniu.</li><br><br>
+	
+	
+	<h1>Urazy kręgosłupa</h1>
+	
+	<p>Typowe objawy urazów kręgosłupa:<br><br>
+	
+	<li>Bardzo silny ból w miejscu urazu.</li><br>
+	
+	<li>Mimowolne oddawanie moczu i kału.</li><br>
+	
+	<li>Porażenie czuciowo-ruchowe kończyn.</li><br>
+	
+	<li>Utrata przytomności</li><br>
+	
+	Pierwsza Pomoc:<br><br>
+	
+	<li>Natychmiast weźwij Pogotowie Ratunkowe.</li><br>
+	
+	<li>Zapobiegaj wszelkim ruchom, podtrzymuj delikatnie głowę poszkodowanego w zastanej pozycji.</li><br>
+	
+	<li>Jeżeli nie ma takiej konieczności nie ruszaj poszkodowanego z miejsca zdarzenia.</li><br>
+	
+	<li>Towarzysz poszkodowanemu, kontroluj jego stan i udzielaj wsparcia psychologicznego.</li></p><br><br>
+	
+	</div>
+	
+	<div class="foother">
+	&copy;2021-2022 Moje Bezpieczeństwo. Twórca Maciej Kornaga. Wszelkie prawa zastrzeżone!<br>
+	W razie jakich kolwiek błędów kontaktować się z twórcą.
+	</div>
+	
+</div>
+
+<script src="jquery.js"></script>
+
+<script>
+
+$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+
+
+</html>
